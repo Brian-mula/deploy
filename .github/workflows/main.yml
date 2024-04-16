@@ -1,4 +1,4 @@
-name: Build an push node api to ECR
+name: Build and push node api to ECR
 on:
     push:
         branches: [main]
