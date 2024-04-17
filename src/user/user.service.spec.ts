@@ -16,8 +16,8 @@ describe('UserService', () => {
     expect(service).toBeDefined();
   });
 
-  it('should create a new user',()=>{
-    const newUser = service.create({
+  it('should create a new user',async()=>{
+    const newUser = await service.create({
       username: 'test',
       phone_number: '1234567890',
 

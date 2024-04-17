@@ -4,8 +4,14 @@ import { UpdateUserDto } from './dto/update-user.dto';
 
 @Injectable()
 export class UserService {
-  create(createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+   async create(createUserDto: CreateUserDto) {
+    const { username, phone_number } = createUserDto;
+    const newUser = {
+      username,
+      phone_number,
+    
+    }
+    return newUser;
   }
 
   findAll() {
