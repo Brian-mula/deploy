@@ -24,7 +24,7 @@ jobs:
             - name: Automatic Tagging of release
               id: increment-git-tag
               run: |
-                bash ./build/git_update.sh patch
+                bash ./build/git_update.sh -v patch
 
             - name: Build, tag, and push image to Amazon ECR
               id: build-image
